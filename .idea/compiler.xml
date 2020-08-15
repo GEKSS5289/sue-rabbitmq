@@ -12,4 +12,10 @@
     </annotationProcessing>
     <bytecodeTargetLevel target="8" />
   </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="sue-rabbitmq-consumer" options="-parameters" />
+      <module name="sue-rabbitmq-producer" options="-parameters" />
+    </option>
+  </component>
 </project>
