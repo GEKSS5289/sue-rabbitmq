@@ -6,7 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="sue-rabbitmq" />
+        <module name="sue-rabbitmq-producer" />
+        <module name="sue-rabbitmq-consumer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8" />
