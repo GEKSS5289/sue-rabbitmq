@@ -1,7 +1,5 @@
 package com.sue.component;
 
-import org.springframework.amqp.AmqpException;
-import org.springframework.amqp.core.MessagePostProcessor;
 import org.springframework.amqp.rabbit.connection.CorrelationData;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,8 +8,6 @@ import org.springframework.messaging.MessageHeaders;
 import org.springframework.messaging.support.MessageBuilder;
 import org.springframework.stereotype.Component;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Map;
 import java.util.UUID;
 
@@ -41,7 +37,7 @@ public class RabbitSender {
          */
         @Override
         public void confirm(CorrelationData correlationData, boolean ack, String cause) {
-
+            System.out.println("ack:"+ack);
         }
     };
 
@@ -65,7 +61,5 @@ public class RabbitSender {
                     return message1;
                 },
                 correlationData);
-
-
     }
 }
