@@ -1,3 +1,3 @@
 # 🐰sue-rabbitmq
-### 📧分布式消息队列
-
+> #### 🛰rabbitmq--⛓--[`CONFIG`](https://github.com/GEKSS5289/sue-config/blob/master/RabbitMQConfig.md)
+> #### 🚀rabbitmq--⛓--[`USING`](https://github.com/GEKSS5289/sue-play/blob/master/PlayRabbitMQ.md)
